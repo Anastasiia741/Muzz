@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ChatEntity" representedClassName="ChatEntity" syncable="YES">
+        <attribute name="hasUnreadMessage" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MessageEntity" inverseName="chats" inverseEntity="MessageEntity"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonEntity" inverseName="chats" inverseEntity="PersonEntity"/>
+    </entity>
+    <entity name="MessageEntity" representedClassName="MessageEntity" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="chats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatEntity" inverseName="messages" inverseEntity="ChatEntity"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PersonEntity"/>
+    </entity>
+    <entity name="PersonEntity" representedClassName="PersonEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="chats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatEntity" inverseName="person" inverseEntity="ChatEntity"/>
+    </entity>
+</model>

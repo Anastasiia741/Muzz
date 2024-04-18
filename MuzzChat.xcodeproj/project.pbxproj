@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7124F8CD2BC964490032356E /* MuzzChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8CC2BC964490032356E /* MuzzChatApp.swift */; };
+		7124F8CF2BC964490032356E /* MainChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8CE2BC964490032356E /* MainChatsView.swift */; };
+		7124F8D12BC9644A0032356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7124F8D02BC9644A0032356E /* Assets.xcassets */; };
+		7124F8D42BC9644A0032356E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7124F8D32BC9644A0032356E /* Preview Assets.xcassets */; };
+		7124F8DF2BC96BB40032356E /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8DE2BC96BB40032356E /* ChatCell.swift */; };
+		7124F8E12BC96D7D0032356E /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8E02BC96D7D0032356E /* ChatModel.swift */; };
+		7124F8E32BC977850032356E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8E22BC977850032356E /* DateExtension.swift */; };
+		7124F8E52BC97D3E0032356E /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8E42BC97D3E0032356E /* ChatsViewModel.swift */; };
+		7124F8E72BC97F300032356E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8E62BC97F300032356E /* ChatView.swift */; };
+		7124F8EA2BCC0C120032356E /* ChatNavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8E92BCC0C120032356E /* ChatNavigationBarItem.swift */; };
+		7124F8F02BCC111E0032356E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8EF2BCC111E0032356E /* Images.swift */; };
+		7124F8F22BCC11D40032356E /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124F8F12BCC11D40032356E /* Texts.swift */; };
+		7165B90A2BCD1B5B000B39AE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165B9092BCD1B5B000B39AE /* MessageView.swift */; };
+		7165B90D2BCD2AC9000B39AE /* ChatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7165B90B2BCD2AC9000B39AE /* ChatModel.xcdatamodeld */; };
+		7165B9102BCD2FBD000B39AE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165B90F2BCD2FBD000B39AE /* CoreDataManager.swift */; };
+		7165B9122BCD3D93000B39AE /* ChatEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165B9112BCD3D93000B39AE /* ChatEntity+CoreDataClass.swift */; };
+		7165B9222BD01398000B39AE /* MessageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165B9212BD01398000B39AE /* MessageEntity+CoreDataClass.swift */; };
+		7165B9262BD014C7000B39AE /* PersonEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165B9252BD014C7000B39AE /* PersonEntity+CoreDataClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7124F8C92BC964490032356E /* MuzzChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzzChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7124F8CC2BC964490032356E /* MuzzChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzChatApp.swift; sourceTree = "<group>"; };
+		7124F8CE2BC964490032356E /* MainChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChatsView.swift; sourceTree = "<group>"; };
+		7124F8D02BC9644A0032356E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7124F8D32BC9644A0032356E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7124F8DE2BC96BB40032356E /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		7124F8E02BC96D7D0032356E /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		7124F8E22BC977850032356E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		7124F8E42BC97D3E0032356E /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		7124F8E62BC97F300032356E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7124F8E92BCC0C120032356E /* ChatNavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavigationBarItem.swift; sourceTree = "<group>"; };
+		7124F8EF2BCC111E0032356E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7124F8F12BCC11D40032356E /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		7165B9092BCD1B5B000B39AE /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		7165B90C2BCD2AC9000B39AE /* ChatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatModel.xcdatamodel; sourceTree = "<group>"; };
+		7165B90F2BCD2FBD000B39AE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7165B9112BCD3D93000B39AE /* ChatEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7165B9212BD01398000B39AE /* MessageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7165B9252BD014C7000B39AE /* PersonEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7124F8C62BC964490032356E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7124F8C02BC964490032356E = {
+			isa = PBXGroup;
+			children = (
+				7124F8CB2BC964490032356E /* MuzzChat */,
+				7124F8CA2BC964490032356E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7124F8CA2BC964490032356E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8C92BC964490032356E /* MuzzChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7124F8CB2BC964490032356E /* MuzzChat */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8E82BCC0B7F0032356E /* App */,
+				7124F8DB2BC9652C0032356E /* Views */,
+				7124F8DC2BC965390032356E /* ViewModel */,
+				7124F8DA2BC965230032356E /* Model */,
+				7124F8ED2BCC10DB0032356E /* Constants */,
+				7124F8D22BC9644A0032356E /* Preview Content */,
+			);
+			path = MuzzChat;
+			sourceTree = "<group>";
+		};
+		7124F8D22BC9644A0032356E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8D32BC9644A0032356E /* Preview Assets.xcassets */,
+				7124F8D02BC9644A0032356E /* Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7124F8DA2BC965230032356E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7165B90E2BCD2F58000B39AE /* DataModel */,
+				7124F8E02BC96D7D0032356E /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7124F8DB2BC9652C0032356E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8CE2BC964490032356E /* MainChatsView.swift */,
+				7124F8E62BC97F300032356E /* ChatView.swift */,
+				7124F8DD2BC96BA40032356E /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7124F8DC2BC965390032356E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8E42BC97D3E0032356E /* ChatsViewModel.swift */,
+				7124F8E22BC977850032356E /* DateExtension.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7124F8DD2BC96BA40032356E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8DE2BC96BB40032356E /* ChatCell.swift */,
+				7165B9092BCD1B5B000B39AE /* MessageView.swift */,
+				7124F8E92BCC0C120032356E /* ChatNavigationBarItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7124F8E82BCC0B7F0032356E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8CC2BC964490032356E /* MuzzChatApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7124F8ED2BCC10DB0032356E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7124F8EF2BCC111E0032356E /* Images.swift */,
+				7124F8F12BCC11D40032356E /* Texts.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7165B90E2BCD2F58000B39AE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7165B90B2BCD2AC9000B39AE /* ChatModel.xcdatamodeld */,
+				7165B90F2BCD2FBD000B39AE /* CoreDataManager.swift */,
+				7165B92D2BD161A8000B39AE /* Entityes */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		7165B92D2BD161A8000B39AE /* Entityes */ = {
+			isa = PBXGroup;
+			children = (
+				7165B9112BCD3D93000B39AE /* ChatEntity+CoreDataClass.swift */,
+				7165B9212BD01398000B39AE /* MessageEntity+CoreDataClass.swift */,
+				7165B9252BD014C7000B39AE /* PersonEntity+CoreDataClass.swift */,
+			);
+			path = Entityes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7124F8C82BC964490032356E /* MuzzChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7124F8D72BC9644A0032356E /* Build configuration list for PBXNativeTarget "MuzzChat" */;
+			buildPhases = (
+				7124F8C52BC964490032356E /* Sources */,
+				7124F8C62BC964490032356E /* Frameworks */,
+				7124F8C72BC964490032356E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuzzChat;
+			productName = MuzzChat;
+			productReference = 7124F8C92BC964490032356E /* MuzzChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7124F8C12BC964490032356E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					7124F8C82BC964490032356E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 7124F8C42BC964490032356E /* Build configuration list for PBXProject "MuzzChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7124F8C02BC964490032356E;
+			productRefGroup = 7124F8CA2BC964490032356E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7124F8C82BC964490032356E /* MuzzChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7124F8C72BC964490032356E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7124F8D42BC9644A0032356E /* Preview Assets.xcassets in Resources */,
+				7124F8D12BC9644A0032356E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7124F8C52BC964490032356E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7165B9262BD014C7000B39AE /* PersonEntity+CoreDataClass.swift in Sources */,
+				7124F8E32BC977850032356E /* DateExtension.swift in Sources */,
+				7124F8CF2BC964490032356E /* MainChatsView.swift in Sources */,
+				7124F8CD2BC964490032356E /* MuzzChatApp.swift in Sources */,
+				7124F8EA2BCC0C120032356E /* ChatNavigationBarItem.swift in Sources */,
+				7124F8F02BCC111E0032356E /* Images.swift in Sources */,
+				7165B9222BD01398000B39AE /* MessageEntity+CoreDataClass.swift in Sources */,
+				7124F8DF2BC96BB40032356E /* ChatCell.swift in Sources */,
+				7124F8E72BC97F300032356E /* ChatView.swift in Sources */,
+				7165B9102BCD2FBD000B39AE /* CoreDataManager.swift in Sources */,
+				7165B90D2BCD2AC9000B39AE /* ChatModel.xcdatamodeld in Sources */,
+				7124F8E52BC97D3E0032356E /* ChatsViewModel.swift in Sources */,
+				7165B9122BCD3D93000B39AE /* ChatEntity+CoreDataClass.swift in Sources */,
+				7124F8F22BCC11D40032356E /* Texts.swift in Sources */,
+				7165B90A2BCD1B5B000B39AE /* MessageView.swift in Sources */,
+				7124F8E12BC96D7D0032356E /* ChatModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7124F8D52BC9644A0032356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7124F8D62BC9644A0032356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7124F8D82BC9644A0032356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MuzzChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 9N6US9U86T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stasy.MuzzChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7124F8D92BC9644A0032356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MuzzChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 9N6US9U86T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stasy.MuzzChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7124F8C42BC964490032356E /* Build configuration list for PBXProject "MuzzChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7124F8D52BC9644A0032356E /* Debug */,
+				7124F8D62BC9644A0032356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7124F8D72BC9644A0032356E /* Build configuration list for PBXNativeTarget "MuzzChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7124F8D82BC9644A0032356E /* Debug */,
+				7124F8D92BC9644A0032356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7165B90B2BCD2AC9000B39AE /* ChatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7165B90C2BCD2AC9000B39AE /* ChatModel.xcdatamodel */,
+			);
+			currentVersion = 7165B90C2BCD2AC9000B39AE /* ChatModel.xcdatamodel */;
+			path = ChatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7124F8C12BC964490032356E /* Project object */;
+}
